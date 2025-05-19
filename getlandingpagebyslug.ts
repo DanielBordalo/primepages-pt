@@ -3,7 +3,7 @@
 import { createClient } from "@/lib/supabase/server";
 import { LandingPage } from "@/app/lp/[slug]/types";
 
-export async function getLandingPageBySlug(slug: string): Promise<LandingPage | null> {
+export async function getlandingpagebyslug(slug: string): Promise<LandingPage | null> {
   const supabase = createClient();
   const { data, error } = await supabase
     .from("pages")
